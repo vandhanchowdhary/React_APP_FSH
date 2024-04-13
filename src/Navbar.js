@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className="navhead">
                 <button className="menu-icon" onClick={openNav}>&#9776; </button>
                 <div className="logo-container">
-                    <img src="src/res/text-logo.png" alt="main-logo" />
+                    <img src="res/text-logo.png" alt="main-logo" />
                 </div>
                 <div className="links-container">
                     <a href="index.html"><i className="fa fa-home"></i>HOME</a>

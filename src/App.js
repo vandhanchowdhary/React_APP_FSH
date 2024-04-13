@@ -13,11 +13,9 @@ const App = () => {
     const closeNav = () => {
         document.getElementById("mobileNav").style.width = "0";
     }
-
     
     return (
         <div className="body-container">
-            
             <Navbar/>
             <Home/>
             <Accessibility/>
