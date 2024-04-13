@@ -6,13 +6,6 @@ import Home from './Home';
 import Accessibility from './Accessibility';
 
 const App = () => {
-    const openNav = () => {
-        document.getElementById("mobileNav").style.width = "250px";
-    }
-
-    const closeNav = () => {
-        document.getElementById("mobileNav").style.width = "0";
-    }
     
     return (
         <div className="body-container">
