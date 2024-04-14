@@ -3,9 +3,26 @@ import React from "react";
 const Accessibility = () =>{
     
     const toggleAccessibilityOptions = () => {
-        const accessibilityOption = document.getElementById("accessibility_option");
-        accessibilityOption.style.display = accessibilityOption.style.display === "block" ? "none" : "block";
+
+        var accessBtn = document.getElementById('accessibilityButton');
+    
+        var accessibilityOptions = document.getElementById('accessibility_option');
+        if (accessibilityOptions.style.display === 'block') {
+            accessibilityOptions.style.display = 'none';
+            accessBtn.style.animationPlayState = 'running';
+            accessBtn.innerHTML = "Accessibility";
+    
+        } else {
+            accessibilityOptions.style.display = 'block';
+            accessBtn.style.animationPlayState = 'paused';
+            accessBtn.innerHTML = "Close";
+        }
     }
+
+    // const toggleAccessibilityOptions = () => {
+    //     const accessibilityOption = document.getElementById("accessibility_option");
+    //     accessibilityOption.style.display = accessibilityOption.style.display === "block" ? "none" : "block";
+    // }
 
     const increaseTextSize = () => {
         document.body.style.fontSize = "larger";
