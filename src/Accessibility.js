@@ -21,6 +21,24 @@ const Accessibility = () =>{
 
     const toggleHighContrastDark = () => {
         // Implement your high contrast dark mode logic here
+        var divElements = document.getElementsByTagName('div');
+        var h1Elements = document.getElementsByTagName('h1');
+        var buttonElements = document.getElementsByTagName('button');
+
+        for (var i = 0; i < divElements.length; i++) {
+            divElements[i].classList.toggle('high-contrast-dark');
+        }
+
+        // Toggle class for h1 elements
+        for (var j = 0; j < h1Elements.length; j++) {
+            h1Elements[j].classList.toggle('high-contrast-dark');
+        }
+        
+        // Toggle class for button elements
+        for (var k = 0; k < buttonElements.length; k++) {
+            buttonElements[k].classList.toggle('high-contrast-dark');
+        }
+
     }
 
     return(

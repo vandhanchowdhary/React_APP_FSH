@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCogs, faChevronRight, faHome, faUsers, faPhone } from '@fortawesome/free-solid-svg-icons';
+import TextLogo from './res/text-logo.png';
 
 const Navbar = () => {
     const openNav = () => {
@@ -20,15 +23,15 @@ const Navbar = () => {
             <div className="navhead">
                 <button className="menu-icon" onClick={openNav}>&#9776; </button>
                 <div className="logo-container">
-                    <img src="res/text-logo.png" alt="main-logo" />
+                    <img src={TextLogo} alt="main-logo" />
                 </div>
                 <div className="links-container">
-                    <a href="index.html"><i className="fa fa-home"></i>HOME</a>
+                    <a href="index.html"><FontAwesomeIcon icon={faHome} className='i'/> HOME</a>
                     <div className="dropdown">
-                        <i className="fa fa-cogs"></i> SERVICES <i className="fa fa-chevron-right servicon"></i>
+                        <FontAwesomeIcon icon={faCogs} className='i'/> SERVICES <FontAwesomeIcon icon={faChevronRight} className="i servicon" />
                         <div className="dropdown-content">
                             <div className="dropdown-1">
-                                Soil Testing <i className="fa fa-chevron-right invert-1"></i>
+                                Soil Testing <FontAwesomeIcon icon={faChevronRight} className="i invert-1" />
                                 <div className="dropdown-content-1">
                                     <a href="pages/redirect.html">By User</a>
                                     <a href="pages/redirect.html">By Professional</a>
@@ -36,7 +39,7 @@ const Navbar = () => {
                                 </div>
                             </div>
                             <div className="dropdown-2">
-                                Fertilizers <i className="fa fa-chevron-right invert-2"></i>
+                                Fertilizers <FontAwesomeIcon icon={faChevronRight} className="i invert-2" />
                                 <div className="dropdown-content-2">
                                     <a href="pages/redirect.html">Organic</a>
                                     <a href="pages/redirect.html">Inorganic</a>
@@ -44,12 +47,12 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <a href="pages/about.html"><i className="fa fa-users"></i>ABOUT</a>
+                    <a href="pages/about.html"><FontAwesomeIcon icon={faUsers} className='i'/>ABOUT</a>
                 </div>
 
                 <div className="right-navcontainer">
                     <a href="pages/contact.html">
-                        <div className="contact-btn"><i className="fa fa-phone fa-lg"></i>CONTACT US</div>
+                        <div className="contact-btn"><FontAwesomeIcon icon={faPhone} className='i' />CONTACT US</div>
                     </a>
                 </div>
             </div>
