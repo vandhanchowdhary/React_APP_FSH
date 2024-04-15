@@ -1,5 +1,5 @@
 import React from "react";
-import Register from "./Register";
+// import Register from "./Register";
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
-            if (event.target == modal) {
+            if (event.target === modal) {
                 modal.style.display = "none";
             }
         }
